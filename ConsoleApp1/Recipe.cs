@@ -8,5 +8,9 @@ namespace ConsoleApp1
 {
     class Recipe
     {
+        public string iceCubes;
+        public string sugarCubes;
+        public string lemons;
+        public string paperCups;
     }
 }

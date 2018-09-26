@@ -8,5 +8,13 @@ namespace ConsoleApp1
 {
     class Weather
     {
+        private int temp;
+        private string forecast;
+        private int degrees;
+
+        
+        
+
+
     }
 }
