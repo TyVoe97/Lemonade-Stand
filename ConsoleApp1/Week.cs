@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Day : Weather
+    class Week
     {
+        public Week()
+        {
+          
+            
+        }
     }
 }

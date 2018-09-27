@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Store : Recipe
-    {
+    class Store
         
+    {
+       
+
     }
 }
