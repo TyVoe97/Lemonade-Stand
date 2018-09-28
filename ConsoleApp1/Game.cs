@@ -9,16 +9,20 @@ namespace ConsoleApp1
     class Game
     {
         public string Rules;
-       
+        Weather weather;
+        Player player;
 
 
-        Player player = new Player("name ");
+        
         public Game()
         {
+            weather = new Weather();
+            player = new Player();
         }
         public void ExecuteGame()
         {
             SetRules();
+            PrintName();
             SetTemperature();
             SetForecast();
             SetIceCubes();
@@ -29,7 +33,7 @@ namespace ConsoleApp1
             
             //display weather forecast
             // diplay player inventory
-            // set recipe 
+            // set recipe\ 
             //how much a cup of lemonade, ice cubes, sugar cubes, and paper cups. costs
             //
             // daily profit or loss needs to be displayed 
@@ -42,27 +46,29 @@ namespace ConsoleApp1
         } 
         public void SetTemperature()
         {
-            Weather weather = new Weather();
             weather.SetTemperature();
         }
-            public void SetForecast()
+        public void SetForecast()
         {
-            Weather forcast = new Weather();
-            forcast.SetForecast();
+            weather.SetForecast();
         }
-        public void SetIceCubes()
-        {
-            Recipe recipe = new Recipe();
-            recipe.SetIceCubes();
-            recipe.SetLemons();
-            recipe.SetPaperCups();
-            recipe.SetSugarCubes();
-        }
+       
         public void Initialize()
         {
             Day day = new Day();
             day.Initialize();
         }
+        public void PrintName()
+        {
+            
+            player.PrintName();
+        }
+        public void SetIceCubes()
+        {
+            player.SetIceCubes();
+        }
+           
+            
 
         
     }

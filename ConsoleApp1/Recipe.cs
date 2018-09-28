@@ -24,6 +24,7 @@ namespace ConsoleApp1
         {
             Console.WriteLine("How many Ice Cubes do you want to buy?");
             iceCubes = double.Parse(Console.ReadLine());
+            
         }
         public void SetLemons()
         {
@@ -32,7 +33,7 @@ namespace ConsoleApp1
         }
         public void SetPaperCups()
         {
-            Console.WriteLine("How many Cups do you want to buy?");
+            Console.WriteLine("How many Paper Cups do you want to buy?");
             paperCups = double.Parse(Console.ReadLine());
         }
         public void SetSugarCubes()

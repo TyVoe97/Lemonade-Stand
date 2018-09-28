@@ -43,6 +43,17 @@ namespace ConsoleApp1
             {
                 forecast = "clear + sunny";
             }
+
+            List<string> dayList = new List<string>();
+
+            void Initialize()
+            {
+                dayList.Add("Monday");
+                dayList.Add("Tuesday");
+                dayList.Add("Wednesday");
+                dayList.Add("Thursday");
+                dayList.Add("Friday");
+            }
         }
         
     }

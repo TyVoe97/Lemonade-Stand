@@ -10,17 +10,27 @@ namespace ConsoleApp1
     class Player
     {
         string player1;
-         
-        
-        public Player(string player1)
+        Recipe recipe;
+        Inventory inventory;
+
+        public Player()
         {
-            this.player1 = player1;
+
         }
         public void PrintName()
         {
+            Console.WriteLine("What's your name");
+            string player1 = Console.ReadLine();
+            Console.WriteLine("Hello " + player1);
 
-            Console.WriteLine("Your name is {0}" + this.player1);
         }
-        
+        public void SetIceCubes()
+        {
+            
+            recipe.SetIceCubes();
+            recipe.SetLemons();
+            recipe.SetPaperCups();
+            recipe.SetSugarCubes();
+        }
     }
 }
