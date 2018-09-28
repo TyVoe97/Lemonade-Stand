@@ -14,8 +14,9 @@ namespace ConsoleApp1
             Game game = new Game();
             game.ExecuteGame();
 
-            Game rules = new Game();
-            game.SetRules();
+
+
+            
         }
     }
 }

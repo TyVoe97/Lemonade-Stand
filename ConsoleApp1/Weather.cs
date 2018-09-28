@@ -26,7 +26,7 @@ namespace ConsoleApp1
         public void SetForecast()
         {
             Random random = new Random();
-            int weather = random.Next(1, 3);
+            int weather = random.Next(1, 5);
             if (weather == 1)
             {
                 forecast = "rain";
@@ -35,9 +35,13 @@ namespace ConsoleApp1
             {
                 forecast = "sunny";
             }
-            else 
+            else if(weather == 3)
             {
                 forecast = "cloudy";
+            }
+            else if(weather == 4)
+            {
+                forecast = "clear + sunny";
             }
         }
         

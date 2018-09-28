@@ -11,7 +11,7 @@ namespace ConsoleApp1
 
     class Customer
     {
-        int cash;
+        
 
 
         public Customer(int cash)

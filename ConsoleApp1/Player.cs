@@ -18,7 +18,8 @@ namespace ConsoleApp1
         }
         public void PrintName()
         {
-            Console.WriteLine("Your name is = {0}" + this.player1);
+
+            Console.WriteLine("Your name is {0}" + this.player1);
         }
         
     }

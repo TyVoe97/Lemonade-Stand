@@ -8,20 +8,25 @@ namespace ConsoleApp1
 {
     class Game
     {
-        public char Rules;
-        
+        public string Rules;
+       
 
-        
+
         Player player = new Player("name ");
         public Game()
         {
         }
         public void ExecuteGame()
         {
+            SetRules();
+            SetTemperature();
+            SetForecast();
+            SetIceCubes();
+            Initialize();
+            {
+          
+            }
             
-        
-        player.PrintName();
-            //Rules
             //display weather forecast
             // diplay player inventory
             // set recipe 
@@ -32,13 +37,36 @@ namespace ConsoleApp1
         }
         public void SetRules()
         {
- Console.WriteLine(" You have 7 days to sell as much lemonade as posible. The temperature, Weather, and Ingrediants will affect the way people buy lemonade. For example if it's sunny and 90 degress the customer will want more ice and taste to be sweeter or if its cold put less ice in so they will like it. Each day you will get to choose the price. If it's to high the customers wont buy it and if its to low customers will buy it but you wont earn any profit form it. Maybe you can raise the price on hot days and lower it on cold days so the customer will. ");
-          Rules = char.Parse(Console.ReadLine());
+            Console.WriteLine(" You have 7 days to sell as much lemonade as posible. The temperature, Weather, and Ingrediants will affect the way people buy lemonade. For example if it's sunny and 90 degress the customer will want more ice and taste to be sweeter or if its cold put less ice in so they will like it. Each day you will get to choose the price. If it's to high the customers wont buy it and if its to low customers will buy it but you wont earn any profit form it. Maybe you can raise the price on hot days and lower it on cold days so the customer will. ");
+            Rules = (Console.ReadLine());
+        } 
+        public void SetTemperature()
+        {
+            Weather weather = new Weather();
+            weather.SetTemperature();
         }
-     
-            
+            public void SetForecast()
+        {
+            Weather forcast = new Weather();
+            forcast.SetForecast();
         }
+        public void SetIceCubes()
+        {
+            Recipe recipe = new Recipe();
+            recipe.SetIceCubes();
+            recipe.SetLemons();
+            recipe.SetPaperCups();
+            recipe.SetSugarCubes();
+        }
+        public void Initialize()
+        {
+            Day day = new Day();
+            day.Initialize();
+        }
+
         
+    }
+       
        
 }
 
