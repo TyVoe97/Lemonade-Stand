@@ -8,12 +8,13 @@ namespace ConsoleApp1
 {
     class Weather
     {
+
         int temperature;
         string forecast;
         string Initializing;
         public Weather()
         {
-            
+
 
         }
         public void SetTemperature()
@@ -21,7 +22,7 @@ namespace ConsoleApp1
             Random random = new Random();
             temperature = random.Next(50, 99);
             System.Console.WriteLine(temperature);
-            
+
         }
         public void SetForecast()
         {
@@ -31,35 +32,19 @@ namespace ConsoleApp1
             {
                 forecast = "rain";
             }
-            else if(weather == 2)
+            else if (weather == 2)
             {
                 forecast = "sunny";
             }
-            else if(weather == 3)
+            else if (weather == 3)
             {
                 forecast = "cloudy";
             }
-            else if(weather == 4)
+            else if (weather == 4)
             {
                 forecast = "clear + sunny";
             }
-
-
-               
-        public void Initialize()
-            {
-                List<string> dayList = new List<string>();
-                
-                {
-                    dayList.Add("Monday");
-                    dayList.Add("Tuesday");
-                    dayList.Add("Wednesday");
-                    dayList.Add("Thursday");
-                    dayList.Add("Friday");
-
-                }
-            }
-        }   
-        
+        }
     }
 }
+    

@@ -16,6 +16,9 @@ namespace ConsoleApp1
         {
 
         }
+
+
+        public 
         public void SetItems()
         {
             List<string> items = new List<string>();
