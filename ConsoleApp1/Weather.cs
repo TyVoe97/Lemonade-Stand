@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         int temperature;
         string forecast;
-
+        string Initializing;
         public Weather()
         {
             
@@ -44,17 +44,22 @@ namespace ConsoleApp1
                 forecast = "clear + sunny";
             }
 
-            List<string> dayList = new List<string>();
 
-            void Initialize()
+               
+        public void Initialize()
             {
-                dayList.Add("Monday");
-                dayList.Add("Tuesday");
-                dayList.Add("Wednesday");
-                dayList.Add("Thursday");
-                dayList.Add("Friday");
+                List<string> dayList = new List<string>();
+                
+                {
+                    dayList.Add("Monday");
+                    dayList.Add("Tuesday");
+                    dayList.Add("Wednesday");
+                    dayList.Add("Thursday");
+                    dayList.Add("Friday");
+
+                }
             }
-        }
+        }   
         
     }
 }

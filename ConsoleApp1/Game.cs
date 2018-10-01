@@ -11,13 +11,14 @@ namespace ConsoleApp1
         public string Rules;
         Weather weather;
         Player player;
-
+      
 
         
         public Game()
         {
             weather = new Weather();
             player = new Player();
+           
         }
         public void ExecuteGame()
         {
@@ -27,6 +28,7 @@ namespace ConsoleApp1
             SetForecast();
             SetIceCubes();
             Initialize();
+            
             {
           
             }
@@ -51,12 +53,9 @@ namespace ConsoleApp1
         public void SetForecast()
         {
             weather.SetForecast();
-        }
-       
-        public void Initialize()
-        {
-            Day day = new Day();
-            day.Initialize();
+        
+           
+            weather.Initialize();
         }
         public void PrintName()
         {
