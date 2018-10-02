@@ -11,14 +11,14 @@ namespace ConsoleApp1
         public string Rules;
         Weather weather;
         Player player;
-      
 
-        
+
+
         public Game()
         {
             weather = new Weather();
             player = new Player();
-           
+
         }
         public void ExecuteGame()
         {
@@ -27,12 +27,12 @@ namespace ConsoleApp1
             SetTemperature();
             SetForecast();
             SetIceCubes();
-            Initialize();
-            
+
+
             {
-          
+
             }
-            
+
             //display weather forecast
             // diplay player inventory
             // set recipe\ 
@@ -45,39 +45,12 @@ namespace ConsoleApp1
         {
             Console.WriteLine(" You have 7 days to sell as much lemonade as posible. The temperature, Weather, and Ingrediants will affect the way people buy lemonade. For example if it's sunny and 90 degress the customer will want more ice and taste to be sweeter or if its cold put less ice in so they will like it. Each day you will get to choose the price. If it's to high the customers wont buy it and if its to low customers will buy it but you wont earn any profit form it. Maybe you can raise the price on hot days and lower it on cold days so the customer will. ");
             Rules = (Console.ReadLine());
-        } 
-        
-        public void SetTemperature()
+        }
+
+
+        private void SetPaperCups()
         {
 
-        }
-        private void Recipe()
-        {
-            //paper cups 
-            Recipe("1", "Paper Cups", 25, 1.10);
-            Recipe("1", "Paper Cups", 75, 1.84);
-            Recipe("1", "Paper Cups", 100, 3.22);
-            // lemons
-            Recipe("2", "Lemons", 10, 0.70);
-            Recipe("2", "Lemons", 30, 2.75);
-            Recipe("2", "Lemons", 75, 3.85);
-            // Sugar Cubes
-            Recipe("3", "Sugar Cubes", 8, 0.62);
-            Recipe("3", "Sugar Cubes", 22, 1.75);
-            Recipe("3", "Sugar Cubes", 50, 3.45);
-            // IceCubes
-            Recipe("4", "Ice Cubes", 100, 0.80);
-            Recipe("4", "Ice Cubes", 250, 2.75);
-            Recipe("4", "Ice Cubes", 500, 3.65);
-        }
-        private void SetRecipe( string id, string desc, int quantity, double price)
-        {
-            Recipe recipe = new Recipe();
-            recipe.Id = Id;
-            recipe.description = desc;
-            recipe.Quantity = quantity;
-            recipe.price = price;
-            
         }
         public void SetTemperature()
         {
@@ -87,25 +60,26 @@ namespace ConsoleApp1
         {
             weather.SetForecast();
         }
-       
-        public void Initialize()
+        public void SetIceCubes()
         {
+            player.SetPaperCups();
+        }
+    }
+}
+      
            
            
-        }
-        public void PrintName()
-        {
-            
-            player.PrintName();
-        }
+        
+      
+   
        
         
            
             
 
         
-    }
+    
        
        
-}
+
 

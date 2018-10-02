@@ -13,27 +13,25 @@ namespace ConsoleApp1
         Recipe recipe;
         Inventory inventory;
         
-        public double PriceForLemonade;
-        public double wallet = 20;
-        }
+     }
   
-   
-        
-        public void PrintName()
+
+     public void PrintName()
         {
             Console.WriteLine("What's your name");
             string player1 = Console.ReadLine();
             Console.WriteLine("Hello " + player1);
 
         }
-        public void SetIceCubes()
+       public void SetIceCubes()
         {
-            
+
             recipe.SetIceCubes();
             recipe.SetLemons();
             recipe.SetPaperCups();
             recipe.SetSugarCubes();
         }
+    
 
-    }
 }
+

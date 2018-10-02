@@ -9,42 +9,74 @@ namespace ConsoleApp1
 
     class Recipe
     {
-        
-        public string iceCubes;
-        public string sugarCubes;
-        public string lemons;
-        public string paperCups;
-       
+
+        public int iceCubes = 4;
+        public int sugarCubes = 3;
+        public int lemons = 2;
+        public int paperCups = 1;
+        int Id;
+        string description;
+        int Quantity;
+        double price;
+
         public Recipe()
         {
-          
+
 
         }
 
-        public void SetIceCubes()
+        public void SetPaperCups()
         {
-            
-           
-            Console.WriteLine("How many Ice Cubes do you want to buy?");
-            int id = int.Parse(Console.ReadLine());
-            if (id == 1) 
-             Console.ReadLine();
-            
+
+
+            Console.WriteLine("Press 1 for Ice Cubes");
+            int paperCups = int.Parse(Console.ReadLine());
+            if (paperCups == 1)
+            {
+               string ("1", "Paper Cups", 25, 1.10);
+               string ("1", "Paper Cups", 75, 1.84);
+               string ("1", "Paper Cups", 100, 3.22);
+            }
+            Console.ReadLine();
+
         }
         public void SetLemons()
         {
-            Console.WriteLine("How many Lemons do you want to buy?");
-            lemons = (Console.ReadLine());
-        }
-        public void SetPaperCups()
-        {
-            Console.WriteLine("How many Paper Cups do you want to buy?");
-            paperCups = (Console.ReadLine());
+            Console.WriteLine("Press 2 for Lemons");
+            int id = int.Parse(Console.ReadLine());
+            if (id == 2)
+            {
+
+            }
+            Console.ReadLine();
         }
         public void SetSugarCubes()
         {
-            Console.WriteLine("How many Sugar Cubes do you want to buy?");
-            sugarCubes = (Console.ReadLine());
+            Console.WriteLine("Press 3 for Sugar Cubes ");
+            int id = int.Parse(Console.ReadLine());
+            if (id == 3)
+            {
+
+            }
+            Console.ReadLine();
+        }
+        public void SetIceCubes()
+        {
+            Console.WriteLine("Press 4 fo Ice Cubes");
+            int id = int.Parse(Console.ReadLine());
+            if (id == 4)
+            {
+
+            }
+            Console.ReadLine();
+        }
+        private void SetRecipe(int id, string desc, int quantity, double price)
+        {
+            Recipe recipe = new Recipe();
+            recipe.Id = id;
+            recipe.description = desc;
+            recipe.Quantity = quantity;
+            recipe.price = price;
         }
     }
 }
