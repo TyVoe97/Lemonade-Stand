@@ -12,11 +12,13 @@ namespace ConsoleApp1
         string player1;
         Recipe recipe;
         Inventory inventory;
-
-        public Player()
-        {
-
+        
+        public double PriceForLemonade;
+        public double wallet = 20;
         }
+  
+   
+        
         public void PrintName()
         {
             Console.WriteLine("What's your name");
@@ -32,5 +34,6 @@ namespace ConsoleApp1
             recipe.SetPaperCups();
             recipe.SetSugarCubes();
         }
+
     }
 }

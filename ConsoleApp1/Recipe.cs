@@ -10,36 +10,41 @@ namespace ConsoleApp1
     class Recipe
     {
         
-        public double iceCubes;
-        public double sugarCubes;
-        public double lemons;
-        public double paperCups;
-
+        public string iceCubes;
+        public string sugarCubes;
+        public string lemons;
+        public string paperCups;
+       
         public Recipe()
         {
+          
 
         }
 
         public void SetIceCubes()
         {
+            
+           
             Console.WriteLine("How many Ice Cubes do you want to buy?");
-            iceCubes = double.Parse(Console.ReadLine());
+            int id = int.Parse(Console.ReadLine());
+            if (id == 1) 
+             Console.ReadLine();
             
         }
         public void SetLemons()
         {
             Console.WriteLine("How many Lemons do you want to buy?");
-            lemons = double.Parse(Console.ReadLine());
+            lemons = (Console.ReadLine());
         }
         public void SetPaperCups()
         {
             Console.WriteLine("How many Paper Cups do you want to buy?");
-            paperCups = double.Parse(Console.ReadLine());
+            paperCups = (Console.ReadLine());
         }
         public void SetSugarCubes()
         {
             Console.WriteLine("How many Sugar Cubes do you want to buy?");
-            sugarCubes = double.Parse(Console.ReadLine());
+            sugarCubes = (Console.ReadLine());
         }
     }
 }

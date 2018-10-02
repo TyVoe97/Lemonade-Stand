@@ -51,26 +51,35 @@ namespace ConsoleApp1
         {
 
         }
-        private void SetItem()
+        private void Recipe()
         {
             //paper cups 
-            SetItem("1", "Paper Cups", 25, 1.10);
-            SetItem("1", "Paper Cups", 75, 1.84);
-            SetItem("1", "Paper Cups", 100, 3.22);
+            Recipe("1", "Paper Cups", 25, 1.10);
+            Recipe("1", "Paper Cups", 75, 1.84);
+            Recipe("1", "Paper Cups", 100, 3.22);
             // lemons
-            SetItem("2", "Lemons", 10, 0.70);
-            SetItem("2", "Lemons", 30, 2.75);
-            SetItem("2", "Lemons", 75, 3.85);
+            Recipe("2", "Lemons", 10, 0.70);
+            Recipe("2", "Lemons", 30, 2.75);
+            Recipe("2", "Lemons", 75, 3.85);
             // Sugar Cubes
-            SetItem("3", "Sugar Cubes", 8, 0.62);
-            SetItem("3", "Sugar Cubes", 22, 1.75);
-            SetItem("3", "Sugar Cubes", 50, 3.45);
+            Recipe("3", "Sugar Cubes", 8, 0.62);
+            Recipe("3", "Sugar Cubes", 22, 1.75);
+            Recipe("3", "Sugar Cubes", 50, 3.45);
             // IceCubes
-            SetItem("4", "Ice Cubes", 100, 0.80);
-            SetItem("4", "Ice Cubes", 250, 2.75);
-            SetItem("4", "Ice Cubes", 500, 3.65);
+            Recipe("4", "Ice Cubes", 100, 0.80);
+            Recipe("4", "Ice Cubes", 250, 2.75);
+            Recipe("4", "Ice Cubes", 500, 3.65);
         }
-        private void 
+        private void SetRecipe( string id, string desc, int quantity, double price)
+        {
+            Recipe recipe = new Recipe();
+            recipe.Id = Id;
+            recipe.description = desc;
+            recipe.Quantity = quantity;
+            recipe.price = price;
+            
+        }
+        public void SetTemperature()
         {
             weather.SetTemperature();
         }
@@ -89,10 +98,8 @@ namespace ConsoleApp1
             
             player.PrintName();
         }
-        public void SetIceCubes()
-        {
-            player.SetIceCubes();
-        }
+       
+        
            
             
 
